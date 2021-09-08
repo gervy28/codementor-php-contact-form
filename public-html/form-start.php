@@ -1,4 +1,5 @@
-<form>
+
+<form action="./form-submit.php" method="POST">
   <label for="user">User Name</label>
     <input type="text" id="user" name="user" required autofocus>
   <label for="email">Email</label>
@@ -12,6 +13,17 @@
     </select>
   <label for="message">Message</label>
     <textarea id="message" name="message">
-      Enter Your Message Here
     </textarea>
+  <input type="submit">
 </form>
+
+
+<style>
+  form {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
